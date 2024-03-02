@@ -5,21 +5,36 @@ settings:
   daysInHistogram: 99 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
-  allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
-  monitorLabelOperational: 'Operational'
-  monitorLabelNotOperational: 'Not Operational'
-  monitorLabelNoData: 'No data'
-  dayInHistogramNoData: 'No data'
-  dayInHistogramOperational: 'All good'
-  dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
+  allmonitorsOperational: '所有网站运行正常'
+  notAllmonitorsOperational: '部分网站出现问题'
+  monitorLabelOperational: '运行正常'
+  monitorLabelNotOperational: '运行异常'
+  monitorLabelNoData: '暂无数据'
+  dayInHistogramNoData: '暂无数据'
+  dayInHistogramOperational: '一切正常'
+  dayInHistogramNotOperational: ' 事件' # xx incident(s) recorded
 
 monitors:
+  - id: bing-share # unique identifier
+    name: 网页new bing①
+    description: '网友分享的网页new bing， 国内可访问' # default=empty
+    url: 'https://bingai.zklcdc.xyz'
+
+  - id: bing-self # unique identifier
+    name: 网页new bing②
+    description: '网页new bing， 国内可访问' # default=empty
+    url: 'https://bing.121723.xyz'
+
   - id: alist # unique identifier
     name: 爱丽丝的咖啡屋
     description: '部署的alist服务，集成了匿名聊天室和一起看功能' # default=empty
     url: 'https://pan.121723.xyz/'
 
+  - id: blog # unique identifier
+    name: 爱丽丝的博客
+    description: '部署在大善人CF家workers的个人博客' # default=empty
+    url: 'https://blog.121723.xyz/'
+    
   - id: notify # unique identifier
     name: notify
     description: '部署的notify服务' # default=empty
@@ -28,15 +43,10 @@ monitors:
   - id: reader # unique identifier
     name: 在线阅读器
     description: '计划部署' # default=empty
-    url: 'https://reader.121723.xyz/'
-
-  - id: blog # unique identifier
-    name: 爱丽丝的博客
-    description: '部署在大善人CF家workers的个人博客' # default=empty
-    url: 'https://blog.121723.xyz/'
+    url: 'https://reader.121723.xyz/home'
   
   - id: home # unique identifier
-    name: Home
+    name: 🏠
     description: '此监控和导航页面' # default=empty
     url: 'https://amzm.121723.xyz/'
 
@@ -49,17 +59,6 @@ monitors:
     name: large language model
     description: 'CF大善人啊' # default=empty
     url: 'https://llm.121723.xyz/'
-
-  - id: bing-share # unique identifier
-    name: 第一个网页new bing
-    description: '网友分享的网页new bing， 国内可访问' # default=empty
-    url: 'https://bingai.zklcdc.xyz'
-
-  - id: bing-self # unique identifier
-    name: 第二个网页new bing
-    description: '网页new bing， 国内可访问' # default=empty
-    url: 'https://bing.121723.xyz'
-
 
   - id: workers-cloudflare-com # unique identifier
     name: workers.cloudflare.com
