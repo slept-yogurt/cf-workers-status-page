@@ -1,5 +1,5 @@
 settings:
-  title: 'Home & Status'
+  title: '网站运行监控'
   url: 'https://amzm.121723.xyz' # used for Slack messages, 这个不确定是什么用
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 99 # number of days you want to display in histogram
