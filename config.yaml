@@ -18,12 +18,12 @@ monitors:
   - id: bing-share # unique identifier
     name: 网页new bing①
     description: '网友分享的网页new bing， 国内可访问' # default=empty
-    url: 'https://bingai.zklcdc.xyz'
+    url: 'https://bingai.zklcdc.xyz/web/'
 
   - id: bing-self # unique identifier
     name: 网页new bing②
     description: '网页new bing， 国内可访问' # default=empty
-    url: 'https://bing.121723.xyz'
+    url: 'https://bing.121723.xyz/web/'
 
   - id: alist # unique identifier
     name: 爱丽丝的咖啡屋
