@@ -1,8 +1,8 @@
 settings:
   title: 'Home & Status'
-  url: 'https://home.121723.xyz' # used for Slack messages
+  url: 'https://home.121723.xyz' # used for Slack messages, 这个不确定是什么用
   logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
+  daysInHistogram: 99 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
@@ -15,6 +15,47 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
+  - id: alist # unique identifier
+    name: 爱丽丝的咖啡屋
+    description: '部署的alist服务，集成了匿名聊天室和一起看功能' # default=empty
+    url: 'https://pan.121723.xyz/'
+
+  - id: notify # unique identifier
+    name: notify
+    description: '部署的notify服务' # default=empty
+    url: 'https://ntfy.121723.xyz/'
+
+  - id: reader # unique identifier
+    name: 在线阅读器
+    description: '计划部署' # default=empty
+    url: 'https://reader.121723.xyz/'
+
+  - id: blog # unique identifier
+    name: 爱丽丝的博客
+    description: '部署在大善人CF家workers的个人博客' # default=empty
+    url: 'https://blog.121723.xyz/'
+  
+  - id: home # unique identifier
+    name: Home
+    description: '此监控和导航页面' # default=empty
+    url: 'https://home.121723.xyz/'
+
+  - id: sd # unique identifier
+    name: stable diffusion
+    description: '又是大善人提供的服务，目前只返回个狗头' # default=empty
+    url: 'https://sd.121723.xyz/'
+
+  - id: llm # unique identifier
+    name: large language model
+    description: 'CF大善人啊' # default=empty
+    url: 'https://llm.121723.xyz/'
+
+  - id: bing-share # unique identifier
+    name: 第一个网页new bing
+    description: '网友分享的网页new bing， 国内可访问' # default=empty
+    url: 'https://bingai.zklcdc.xyz/web'
+
+
   - id: workers-cloudflare-com # unique identifier
     name: workers.cloudflare.com
     description: 'You write code. They handle the rest.' # default=empty
