@@ -1,6 +1,6 @@
 settings:
   title: 'Home & Status'
-  url: 'https://home.121723.xyz' # used for Slack messages, 这个不确定是什么用
+  url: 'https://amzm.121723.xyz' # used for Slack messages, 这个不确定是什么用
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 99 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -38,7 +38,7 @@ monitors:
   - id: home # unique identifier
     name: Home
     description: '此监控和导航页面' # default=empty
-    url: 'https://home.121723.xyz/'
+    url: 'https://amzm.121723.xyz/'
 
   - id: sd # unique identifier
     name: stable diffusion
@@ -53,7 +53,12 @@ monitors:
   - id: bing-share # unique identifier
     name: 第一个网页new bing
     description: '网友分享的网页new bing， 国内可访问' # default=empty
-    url: 'https://bingai.zklcdc.xyz/web'
+    url: 'https://bingai.zklcdc.xyz'
+
+  - id: bing-self # unique identifier
+    name: 第二个网页new bing
+    description: '网页new bing， 国内可访问' # default=empty
+    url: 'https://bing.121723.xyz'
 
 
   - id: workers-cloudflare-com # unique identifier
