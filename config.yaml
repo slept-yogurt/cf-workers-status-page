@@ -15,13 +15,19 @@ settings:
   dayInHistogramNotOperational: ' 事件' # xx incident(s) recorded
 
 monitors:
-  - id: bing-share # unique identifier
+  - id: bing01 # unique identifier
     name: 网页new bing①
     description: '网友分享的网页new bing， 国内可访问' # default=empty
     url: 'https://bingai.zklcdc.xyz/web/'
 
-  - id: bing-self # unique identifier
+
+  - id: bing02 # unique identifier
     name: 网页new bing②
+    description: '网友分享的网页new bing， 国内可访问' # default=empty
+    url: 'https://bingface.b1ghawk.xyz/'
+
+  - id: bing-self # unique identifier
+    name: 网页new bing③
     description: '网页new bing， 国内可访问' # default=empty
     url: 'https://bing.121723.xyz/web/'
 
@@ -44,6 +50,7 @@ monitors:
     name: 在线阅读器
     description: '计划部署' # default=empty
     url: 'https://reader.121723.xyz/home'
+    linkable: false
   
   - id: home # unique identifier
     name: 🏠
