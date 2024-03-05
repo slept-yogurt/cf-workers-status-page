@@ -19,6 +19,8 @@ monitors:
     name: 网页new bing①
     description: '网友分享的网页new bing， 国内可访问' # default=empty
     url: 'https://bingai.zklcdc.xyz/web/'
+    followRedirect: true
+
 
 
   - id: bing02 # unique identifier
@@ -57,15 +59,15 @@ monitors:
     description: '此监控和导航页面' # default=empty
     url: 'https://amzm.121723.xyz/'
 
-  - id: sd # unique identifier
-    name: stable diffusion
-    description: '又是大善人提供的服务，目前只返回个狗头' # default=empty
-    url: 'https://sd.121723.xyz/'
+#  - id: sd # unique identifier
+#    name: stable diffusion
+#    description: '又是大善人提供的服务，目前只返回个狗头' # default=empty
+#    url: 'https://sd.121723.xyz/'
 
-  - id: llm # unique identifier
-    name: large language model
-    description: 'CF大善人啊' # default=empty
-    url: 'https://llm.121723.xyz/'
+#  - id: llm # unique identifier
+#    name: large language model
+#    description: 'CF大善人啊' # default=empty
+#    url: 'https://llm.121723.xyz/'
 
   - id: workers-cloudflare-com # unique identifier
     name: workers.cloudflare.com
