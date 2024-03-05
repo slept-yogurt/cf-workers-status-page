@@ -1,36 +1,35 @@
-# Cloudflare Worker - Status Page
+# Cloudflare Worker - 网站状态监控
 
-Monitor your websites, showcase status including daily history, and get Slack notification whenever your website status changes. Using **Cloudflare Workers**, **CRON Triggers,** and **KV storage**. Check [my status page](https://status-page.eidam.dev) out! 🚀
+使用 **Cloudflare Workers**、**CRON 触发器** 和 **KV 存储**，监控您的网站，展示每日历史状态，并在您的网站状态发生变化时通过 Slack/Telegram/Discord 接收通知。去原项目作者[演示站](https://status-page.eidam.dev) 瞅瞅! 🚀
 
 ![Status Page](.gitbook/assets/status_page_screenshot.png)
 
 ![Slack notifications](.gitbook/assets/slack_screenshot.png)
 
-## Pre-requisites
+## 前置准备
 
-You'll need a [Cloudflare Workers account](https://dash.cloudflare.com/sign-up/workers) with
+一个[Cloudflare账号](https://dash.cloudflare.com/sign-up/workers)，并满足以下条件
 
-- A workers domain set up
-- The Workers Bundled subscription \($5/mo\)
-  - [It works with Workers Free!](https://blog.cloudflare.com/workers-kv-free-tier/) Check [more info](#workers-kv-free-tier) on how to run on Workers Free.
-- Some websites/APIs to watch 🙂
+- 设置一个workers域名\(部署的时候会自动生成，然后自己再配一个自定义域就好了\)
+- 个人使用的话，免费账号完全够用
+- 要监控的网页/API 🙂
 
-Also, prepare the following secrets
+还要以下密钥
 
-- Cloudflare API token with `Edit Cloudflare Workers` permissions
-- Slack incoming webhook \(optional\)
-- Discord incoming webhook \(optional\)
+- 具有`编辑Cloudflare Workers`权限的Cloudflare API token
+- Slack incoming webhook \(可选\)
+- Discord incoming webhook \(可选\)
 
-## Getting started
+## 开始吧
 
-You can either deploy with **Cloudflare Deploy Button** using GitHub Actions or deploy on your own.
+你可以使用`GitHub Actions`直接CF部署或者自行部署
 
-### Deploy with Cloudflare Deploy Button
+### 直接CF部署
 
 [![Deploy to Cloudflare Workers](https://camo.githubusercontent.com/1f3d0b4d44a2c3f12c78bd02bae907169430e04d728006db9f97a4befa64c886/68747470733a2f2f6465706c6f792e776f726b6572732e636c6f7564666c6172652e636f6d2f627574746f6e3f706169643d74727565)](https://deploy.workers.cloudflare.com/?url=https://github.com/eidam/cf-workers-status-page)
 
-1. Click the button and follow the instructions, you should end up with a clone of this repository
-2. Navigate to your new **GitHub repository &gt; Settings &gt; Secrets** and add the following secrets:
+1. 点击上面的图片并跟随提示操作，最后你会fork得到这个仓库的复制
+2. 导航到 **GitHub repository &gt; Settings &gt; Secrets** 并添加以下密钥:
 
    ```yaml
    - Name: CF_API_TOKEN (should be added automatically)
@@ -44,16 +43,16 @@ You can either deploy with **Cloudflare Deploy Button** using GitHub Actions or 
    - Value: your-discord-webhook-url
    ```
 
-3. Navigate to the **Actions** settings in your repository and enable them
-4. Edit [config.yaml](./config.yaml) to adjust configuration and list all of your websites/APIs you want to monitor
+3. 打开你仓库的 **Actions** 页面并按提示打开自动部署开关
+4. 按你需求编辑 [config.yaml](./config.yaml)
 
    ```yaml
    settings:
      title: 'Status Page'
-     url: 'https://status-page.eidam.dev' # used for Slack & Discord messages
-     logo: logo-192x192.png # image in ./public/ folder
-     daysInHistogram: 90 # number of days you want to display in histogram
-     collectResponseTimes: false # experimental feature, enable only for <5 monitors or on paid plans
+     url: 'https://status-page.eidam.dev' # 这应该是推送消息要用的
+     logo: logo-192x192.png # image in ./public/ folder， logo可以自定义
+     daysInHistogram: 90 # 你想展示状态的天数
+     collectResponseTimes: false # 实验功能, 你有钱或者监控的网站少于5个才开启
 
      # configurable texts across the status page
      allmonitorsOperational: 'All Systems Operational'
@@ -77,13 +76,14 @@ You can either deploy with **Cloudflare Deploy Button** using GitHub Actions or 
        linkable: false # should the titles be links to the service, default=true
    ```
 
-5. Push to `main` branch to trigger the deployment
+5. 推送到`main`分支以触发自动部署
 6. 🎉
-7. _\(optional\)_ Go to [Cloudflare Workers settings](https://dash.cloudflare.com/?to=/workers) and assign custom domain/route
-   - e.g. `status-page.eidam.dev/*` _\(make sure you include `/*` as the Worker also serve static files\)_
-8. _\(optional\)_ Edit [wrangler.toml](./wrangler.toml) to adjust Worker settings or CRON Trigger schedule, especially if you are on [Workers Free plan](#workers-kv-free-tier)
+7. _\(可选\)_ 到[Cloudflare Workers 设置页面](https://dash.cloudflare.com/?to=/workers)设置自定义域或路由
+   - e.g. `status-page.eidam.dev/*` _\(确保你有写`/*` 因为worker上还包含静态文件\)_
+8. _\(可选\)_ 如果你不是富哥\(用的大善人的[免费计划](#workers-kv-free-tier)\)，把[wrangler.toml](./wrangler.toml)的`CRON 触发器`调整到合适的频率
 
-### Telegram notifications
+### Telegram通知
+~~没部署下面的了，先不翻译了~~
 
 To enable telegram notifications, you'll need to take a few additional steps.
 
@@ -103,15 +103,16 @@ You can clone the repository yourself and use Wrangler CLI to develop/deploy, ex
   - `SECRET_SLACK_WEBHOOK_URL`
   - `SECRET_DISCORD_WEBHOOK_URL`
 
-## Workers KV free tier
+## Workers KV 免费计划
 
-The Workers Free plan includes limited KV usage, but the quota is sufficient for 2-minute checks only
+Workers 的免费计划包含有限的 KV 使用量，但配额足够支持每2分钟一次的检查。
 
-- Change the CRON trigger to 2 minutes interval (`crons = ["*/2 * * * *"]`) in [wrangler.toml](./wrangler.toml)
+- 修改`CRON 触发器`为两分钟间隔 (`crons = ["*/2 * * * *"]`) in [wrangler.toml](./wrangler.toml)
+- 如果还有其他用到KV的服务，这个间隔可以再提高一些
 
-## Known issues
+## 已知的问题
 
-- **Max 25 monitors to watch in case you are using Slack notifications**, due to the limit of subrequests Cloudflare Worker can make \(50\).
+- **如果你用Slack通知，最多监控50个网站**, 因为Cloudflare Worker可以支持的子请求个数有限 \(50\).
 
   The plan is to support up to 49 by sending only one Slack notification per scheduled run.
 
