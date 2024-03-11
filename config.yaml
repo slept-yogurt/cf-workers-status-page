@@ -18,7 +18,8 @@ monitors:
   - id: bing01 # unique identifier
     name: 网页new bing①
     description: '网友分享的网页new bing， 国内可访问' # default=empty
-    url: 'https://bingai.zklcdc.xyz/web/'
+    url: 'https://bingai.zklcdc.xyz/'
+    expectStatus: 302
     followRedirect: true
 
 
