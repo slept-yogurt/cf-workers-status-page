@@ -32,8 +32,8 @@ monitors:
 
   - id: bing03 # unique identifier
     name: 网页new bing③
-    description: '华沙网页new bing， 国内可访问' # default=empty
-    url: 'https://b7.121723.xyz/web/index.html'
+    description: '部署在华沙网页new bing， 国内可访问' # default=empty
+    url: 'https://b7.121723.xyz/web/'
     
   - id: bing-self # unique identifier
     name: 网页new bing④
