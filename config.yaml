@@ -15,6 +15,12 @@ settings:
   dayInHistogramNotOperational: ' 事件' # xx incident(s) recorded
 
 monitors:
+
+  - id: synctv # unique identifier
+    name: 👫一个可以远程一起看电影/直播的程序🍿
+    description: '一起看剧吧' # default=empty
+    url: 'https://sync.121723.xyz/web/'
+
   - id: bing01 # unique identifier
     name: 网页new bing①
     description: '网友分享的网页new bing， 国内可访问' # default=empty
