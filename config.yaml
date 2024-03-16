@@ -29,8 +29,14 @@ monitors:
     description: '网友分享的网页new bing， 国内可访问' # default=empty
     url: 'https://bingface.b1ghawk.xyz/'
 
-  - id: bing-self # unique identifier
+
+  - id: bing03 # unique identifier
     name: 网页new bing③
+    description: '华沙网页new bing， 国内可访问' # default=empty
+    url: 'https://b7.121723.xyz/web/index.html'
+    
+  - id: bing-self # unique identifier
+    name: 网页new bing④
     description: '网页new bing， 国内可访问' # default=empty
     url: 'https://bing.121723.xyz/web/'
 
