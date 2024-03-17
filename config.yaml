@@ -61,11 +61,10 @@ monitors:
     description: '部署的notify服务' # default=empty
     url: 'https://ntfy.121723.xyz/'
 
-#  - id: reader # unique identifier
-#    name: 在线阅读器
-#    description: '计划部署' # default=empty
-#    url: 'https://reader.121723.xyz/home'
-#    linkable: false
+  - id: reader # unique identifier
+    name: 📖📕📗📘📙📚
+    description: '在线阅读器' # default=empty
+    url: 'https://reader.121723.xyz/'
   
 #  - id: home # unique identifier
 #    name: 🏠
