@@ -6,7 +6,7 @@ settings:
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: '所有网站运行正常'
-  notAllmonitorsOperational: '部分网站出现问题'
+  notAllmonitorsOperational: '部分网站出现问题, 长时间未恢复请联系📧amzm@gs.serv00.net, 阿里嘎多🫡'
   monitorLabelOperational: '运行正常'
   monitorLabelNotOperational: '运行异常'
   monitorLabelNoData: '暂无数据'
