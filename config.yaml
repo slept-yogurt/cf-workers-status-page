@@ -51,6 +51,11 @@ monitors:
     description: '部署的alist服务，集成了匿名聊天室和一起看功能' # default=empty
     url: 'https://pan.121723.xyz/'
 
+  - id: alist00 # unique identifier
+    name: 咖啡屋备用站
+    description: '部署的alist服务，集成了匿名聊天室和一起看功能' # default=empty
+    url: 'https://p00.121723.xyz/'
+  
   - id: blog # unique identifier
     name: 爱丽丝的博客
     description: '部署在大善人CF家workers的个人博客' # default=empty
@@ -65,6 +70,12 @@ monitors:
     name: 📖📕📗📘📙📚
     description: '在线阅读器' # default=empty
     url: 'https://reader.121723.xyz/'
+  
+  - id: lx-sync # unique identifier
+    name: 🥳🎧🎵
+    description: 'lx-music的数据同步服务' # default=empty
+    url: 'https://lx.121723.xyz/hello'
+  
   
 #  - id: home # unique identifier
 #    name: 🏠
@@ -81,25 +92,25 @@ monitors:
 #    description: 'CF大善人啊' # default=empty
 #    url: 'https://llm.121723.xyz/'
 
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
+#  - id: workers-cloudflare-com # unique identifier
+#    name: workers.cloudflare.com
+#   description: 'You write code. They handle the rest.' # default=empty
+#   url: 'https://workers.cloudflare.com/' # URL to fetch
+#    method: GET # default=GET
+#    expectStatus: 200 # operational status, default=200
+#    followRedirect: false # should fetch follow redirects, default=false
+#    linkable: false # allows the title to be a link, default=true
 
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
-    method: GET
-    expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+#  - id: www-cloudflare-com
+#    name: www.cloudflare.com
+#    description: 'Built for anything connected to the Internet.'
+#    url: 'https://www.cloudflare.com'
+#    method: GET
+#    expectStatus: 200
+#    linkable: true # allows the title to be a link, default=true
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
-    method: GET
-    expectStatus: 200
+#  - id: blog-cloudflare-com
+#    name: The Cloudflare Blog
+#    url: 'https://blog.cloudflare.com/'
+#    method: GET
+#    expectStatus: 200
