@@ -55,7 +55,12 @@ monitors:
     name: 咖啡屋备用站
     description: '部署的alist服务，集成了匿名聊天室和一起看功能' # default=empty
     url: 'https://p00.121723.xyz/'
-  
+
+  - id: pico # unique identifier
+    name: 🪄🛫picoshare🛬
+    description: '文件分享服务' # default=empty
+    url: 'https://pico.121723.xyz/'
+
   - id: blog # unique identifier
     name: 爱丽丝的博客
     description: '部署在大善人CF家workers的个人博客' # default=empty
