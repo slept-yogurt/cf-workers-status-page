@@ -75,11 +75,18 @@ monitors:
     name: 📖📕📗📘📙📚
     description: '在线阅读器' # default=empty
     url: 'https://reader.121723.xyz/'
+
   
   - id: lx-sync # unique identifier
     name: 🥳🎧🎵
     description: 'lx-music的数据同步服务' # default=empty
     url: 'https://lx.121723.xyz/hello'
+
+  - id: uptime-kuma # unique identifier
+    name: 🏠另一个监控🤗
+    description: 'uptime kuma' # default=empty
+    url: 'https://bingface.b1ghawk.xyz/'
+    
   
   
 #  - id: home # unique identifier
