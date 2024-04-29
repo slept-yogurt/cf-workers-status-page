@@ -85,8 +85,27 @@ monitors:
   - id: uptime-kuma # unique identifier
     name: 🏠另一个监控🤗
     description: 'uptime kuma' # default=empty
-    url: 'https://bingface.b1ghawk.xyz/'
-    
+    url: 'https://kuma.121723.xyz/'
+
+  - id: ddg # unique identifier
+    name: 📮📮📧duckduckgo面板
+    description: 'ddg面板' # default=empty
+    url: 'https://ddg.znhy.uk/'
+
+  - id: ddg1 # unique identifier
+    name: 📮📮📧duckduckgo面板
+    description: 'ddg面板' # default=empty
+    url: 'https://ddg.121723.xyz/'
+
+  - id: znhy-email # unique identifier
+    name: 📮📮📮无限邮箱
+    description: 'Infinite Email' # default=empty
+    url: 'https://mail.znhy.uk/'
+
+  - id: digits-email # unique identifier
+    name: 📮📮📮无限邮箱另一个入口
+    description: 'Infinite Email' # default=empty
+    url: 'https://mail.121723.xyz/'
   
   
 #  - id: home # unique identifier
