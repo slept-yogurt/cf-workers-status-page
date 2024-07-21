@@ -89,17 +89,17 @@ monitors:
   - id: ddg # unique identifier
     name: 📮📮📧duckduckgo面板
     description: 'ddg面板' # default=empty
-    url: 'https://ddg.znhy.uk/zh-CN/email/'
+    url: 'https://ddg.znhy.uk/zh-CN/email' 
 
   - id: ddg1 # unique identifier
     name: 📮📮📧duckduckgo面板
     description: 'ddg面板' # default=empty 
-    url: 'https://ddg.121723.xyz/zh-CN/email/' 
+    url: 'https://ddg.121723.xyz/zh-CN/email' 
 
   - id: uptime-kuma # unique identifier
     name: 🏠另一个监控🤗
     description: 'uptime kuma' # default=empty   
-    url: 'https://kuma.121723.xyz/dashboard/'   
+    url: 'https://kuma.121723.xyz/dashboard'     
   
   
 #  - id: home # unique identifier
