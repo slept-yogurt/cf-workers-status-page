@@ -83,7 +83,7 @@ monitors:
 
   - id: notify # unique identifier 
     name: notify
-    description: '部署的notify服务' # default=empty
+    description: '部署的notify服务' # default=empty 
     url: 'https://ntfy.121723.xyz/'
 
   - id: ddg # unique identifier
@@ -96,10 +96,10 @@ monitors:
     description: 'ddg面板' # default=empty 
     url: 'https://ddg.121723.xyz/zh-CN/email'  
 
-#  - id: uptime-kuma # unique identifier 
-#    name: 🏠另一个监控🤗
-#    description: 'uptime kuma' # default=empty    
-#    url: 'https://kuma.121723.xyz/dashboard'     
+  - id: uptime-kuma # unique identifier  
+    name: 🏠另一个监控🤗
+    description: 'uptime kuma' # default=empty    
+    url: 'https://kuma.121723.xyz/dashboard'     
   
   
 #  - id: home # unique identifier 
@@ -112,7 +112,7 @@ monitors:
 #    description: '又是大善人提供的服务，目前只返回个狗头' # default=empty
 #    url: 'https://sd.121723.xyz/'
 
-#  - id: llm # unique identifier
+#  - id: llm # unique identifier 
 #    name: large language model
 #    description: 'CF大善人啊' # default=empty
 #    url: 'https://llm.121723.xyz/'
