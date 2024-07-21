@@ -18,37 +18,37 @@ monitors:
 
   - id: synctv # unique identifier
     name: 👫一个可以远程一起看电影/直播的程序🍿
-    description: '一起看剧吧 //serv0️⃣0️⃣' # default=empty  
+    description: '一起看剧吧 //serv00' # default=empty  
     url: 'https://sync.121723.xyz/web/'
 
   - id: alist00 # unique identifier
     name: 咖啡屋备用站
-    description: '部署的alist服务，集成了匿名聊天室和一起看功能 //serv0️⃣0️⃣' # default=empty
+    description: '部署的alist服务，集成了匿名聊天室和一起看功能 //serv00' # default=empty
     url: 'https://p00.121723.xyz/'
 
   - id: newapi # unique identifier
-    name: New API 
-    description: '部署的New Api //serv0️⃣0️⃣' # default=empty   
-    url: 'https://zf.121723.xyz/' 
+    name: New API
+    description: '部署的New Api //serv00' # default=empty   
+    url: 'https://zf.121723.xyz/'
 
   - id: bing03 # unique identifier
     name: 网页new bing
-    description: '部署在华沙网页new bing， 国内可访问 //serv0️⃣7️⃣' # default=empty
+    description: '部署在华沙网页new bing， 国内可访问 //serv07' # default=empty
     url: 'https://b7.121723.xyz/web/'
     
   - id: reader # unique identifier
     name: 📖📕📗📘📙📚
-    description: '在线阅读器 //serv0️⃣7️⃣' # default=empty
+    description: '在线阅读器 //serv07' # default=empty
     url: 'https://reader.121723.xyz/'
 
   - id: lx-sync # unique identifier
     name: 🥳🎧🎵
-    description: 'lx-music的数据同步服务 //serv0️⃣7️⃣' # default=empty
+    description: 'lx-music的数据同步服务 //serv07' # default=empty
     url: 'https://lx.121723.xyz/hello'
 
   - id: pico # unique identifier 
-    name: 🪄🛫picoshare🛬 
-    description: '文件分享服务 //serv0️⃣8️⃣' # default=empty
+    name: 🪄🛫picoshare🛬
+    description: '文件分享服务 //serv08' # default=empty
     url: 'https://pico.121723.xyz/'
 
   - id: memos # unique identifier 
@@ -89,17 +89,17 @@ monitors:
   - id: ddg # unique identifier
     name: 📮📮📧duckduckgo面板
     description: 'ddg面板' # default=empty
-    url: 'https://ddg.znhy.uk/zh-CN/email' 
+    url: 'https://ddg.znhy.uk/zh-CN/email'
 
   - id: ddg1 # unique identifier
     name: 📮📮📧duckduckgo面板
     description: 'ddg面板' # default=empty 
-    url: 'https://ddg.121723.xyz/zh-CN/email'  
+    url: 'https://ddg.121723.xyz/zh-CN/email'
 
   - id: uptime-kuma # unique identifier  
     name: 🏠另一个监控🤗
     description: 'uptime kuma' # default=empty    
-    url: 'https://kuma.121723.xyz/dashboard'     
+    url: 'https://kuma.121723.xyz/dashboard'
   
   
 #  - id: home # unique identifier 
