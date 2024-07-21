@@ -28,7 +28,7 @@ monitors:
 
   - id: newapi # unique identifier
     name: New API 
-    description: '部署的New Api //serv0️⃣0️⃣' # default=empty  
+    description: '部署的New Api //serv0️⃣0️⃣' # default=empty   
     url: 'https://zf.121723.xyz/' 
 
   - id: bing03 # unique identifier
@@ -47,13 +47,13 @@ monitors:
     url: 'https://lx.121723.xyz/hello'
 
   - id: pico # unique identifier 
-    name: 🪄🛫picoshare🛬
+    name: 🪄🛫picoshare🛬 
     description: '文件分享服务 //serv0️⃣8️⃣' # default=empty
     url: 'https://pico.121723.xyz/'
 
   - id: memos # unique identifier 
     name: ✍️Memos
-    description: 'Memos, 可以当成备忘录 //serv0️⃣8️⃣' # default=empty 
+    description: 'Memos, 可以当成备忘录 //serv0️⃣8️⃣' # default=empty  
     url: 'https://memos.121723.xyz/'
 
   - id: bing-self # unique identifier
@@ -81,7 +81,7 @@ monitors:
     description: '部署的alist服务，集成了匿名聊天室和一起看功能' # default=empty
     url: 'https://pan.121723.xyz/'
 
-  - id: notify # unique identifier
+  - id: notify # unique identifier 
     name: notify
     description: '部署的notify服务' # default=empty
     url: 'https://ntfy.121723.xyz/'
@@ -94,15 +94,15 @@ monitors:
   - id: ddg1 # unique identifier
     name: 📮📮📧duckduckgo面板
     description: 'ddg面板' # default=empty 
-    url: 'https://ddg.121723.xyz/zh-CN/email' 
+    url: 'https://ddg.121723.xyz/zh-CN/email'  
 
-  - id: uptime-kuma # unique identifier
-    name: 🏠另一个监控🤗
-    description: 'uptime kuma' # default=empty   
-    url: 'https://kuma.121723.xyz/dashboard'     
+#  - id: uptime-kuma # unique identifier 
+#    name: 🏠另一个监控🤗
+#    description: 'uptime kuma' # default=empty    
+#    url: 'https://kuma.121723.xyz/dashboard'     
   
   
-#  - id: home # unique identifier
+#  - id: home # unique identifier 
 #    name: 🏠
 #    description: '此监控和导航页面' # default=empty
 #    url: 'https://amzm.121723.xyz/'
