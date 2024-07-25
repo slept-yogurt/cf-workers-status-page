@@ -29,11 +29,11 @@ monitors:
   - id: newapi # unique identifier
     name: New API
     description: '部署的New Api //serv00' # default=empty   
-    url: 'https://zf.121723.xyz/' 
+    url: 'https://zf.121723.xyz/'
 
   - id: bing03 # unique identifier
     name: 网页new bing
-    description: '部署在华沙网页new bing， 国内可访问 //serv07' # default=empty
+    description: '部署在华沙网页new bing, 国内可访问 //serv07' # default=empty
     url: 'https://b7.121723.xyz/web/'
     
   - id: reader # unique identifier
@@ -87,9 +87,9 @@ monitors:
     url: 'https://ntfy.121723.xyz/'
 
   - id: vault # unique identifier   
-    name: vaultwarden 
+    name: vaultwarden
     description: 'vaultwarden' # default=empty  
-    url: 'https://vault.znhy.uk/'  
+    url: 'https://vault.znhy.uk/'
 
   - id: ddg # unique identifier
     name: 📮📮📧duckduckgo面板
