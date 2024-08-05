@@ -28,7 +28,7 @@ monitors:
 
   - id: newapi # unique identifier
     name: New API
-    description: '部署的New Api //serv00' # default=empty   
+    description: '部署的New Api //serv00' # default=empty    
     url: 'https://zf.121723.xyz/'
 
   - id: bing03 # unique identifier
@@ -48,7 +48,7 @@ monitors:
 
   - id: pico # unique identifier 
     name: 🪄🛫picoshare🛬
-    description: '文件分享服务 //serv08' # default=empty
+    description: '文件分享服务 //serv08' # default=empty 
     url: 'https://pico.121723.xyz/'
 
   - id: memos # unique identifier 
@@ -68,13 +68,9 @@ monitors:
 
   - id: znhy-email # unique identifier
     name: 📮📮📮无限邮箱
-    description: 'Infinite Email' # default=empty 
+    description: 'Infinite Email' # default=empty  
     url: 'https://mail.znhy.uk/'
-
-  - id: digits-email # unique identifier
-    name: 📮📮📮无限邮箱另一个入口
-    description: 'Infinite Email' # default=empty
-    url: 'https://mail.121723.xyz/'
+    expectStatus: 302
 
   - id: alist # unique identifier
     name: 爱丽丝的咖啡屋 //v
@@ -112,7 +108,7 @@ monitors:
 #    description: '此监控和导航页面' # default=empty
 #    url: 'https://amzm.121723.xyz/'
 
-#  - id: sd # unique identifier
+#  - id: sd # unique identifier 
 #    name: stable diffusion
 #    description: '又是大善人提供的服务，目前只返回个狗头' # default=empty
 #    url: 'https://sd.121723.xyz/'
@@ -127,8 +123,8 @@ monitors:
 #   description: 'You write code. They handle the rest.' # default=empty
 #   url: 'https://workers.cloudflare.com/' # URL to fetch
 #    method: GET # default=GET
-#    expectStatus: 200 # operational status, default=200
-#    followRedirect: false # should fetch follow redirects, default=false
+#    expectStatus: 200 # operational status, default=200 
+#    followRedirect: false # should fetch follow redirects, default=false 
 #    linkable: false # allows the title to be a link, default=true
 
 #  - id: www-cloudflare-com
