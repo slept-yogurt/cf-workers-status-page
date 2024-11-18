@@ -3,7 +3,7 @@ settings:
   url: 'https://amzm.121723.xyz' # used for Slack messages, 这个不确定是什么用
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 99 # number of days you want to display in histogram
-  collectResponseTimes: true # collects avg response times from CRON locations
+  collectResponseTimes: false # collects avg response times from CRON locations
 
   allmonitorsOperational: '所有网站运行正常'
   notAllmonitorsOperational: '部分网站出现问题, 长时间未恢复请联系📧s@znhy.uk, 阿里嘎多🫡'
