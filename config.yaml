@@ -57,12 +57,12 @@ monitors:
     url: 'https://memos.121723.xyz/'
 
   - id: bing-self # unique identifier
-    name: 网页new bing //cf
-    description: '网页new bing， 国内可访问' # default=empty 
+    name: 网页new bing 
+    description: '部署在cf的网页new bing， 国内可访问' # default=empty 
     url: 'https://bing.121723.xyz/web/'
 
   - id: blog # unique identifier
-    name: 爱丽丝的博客
+    name: my blog
     description: '部署在大善人CF家workers的个人博客' # default=empty
     url: 'https://blog.121723.xyz/'
 
@@ -73,8 +73,8 @@ monitors:
     expectStatus: 302
 
   - id: alist # unique identifier
-    name: 爱丽丝的咖啡屋 //v
-    description: '部署的alist服务，集成了匿名聊天室和一起看功能' # default=empty
+    name: 爱丽丝的咖啡屋
+    description: '自部署的alist服务，集成了匿名聊天室和一起看功能' # default=empty
     url: 'https://pan.121723.xyz/'
 
   - id: notify # unique identifier  
@@ -96,7 +96,17 @@ monitors:
     name: 📮📮📧duckduckgo面板
     description: 'ddg面板' # default=empty 
     url: 'https://ddg.121723.xyz/zh-CN/email'
-  
+    
+  - id: photogragh # unique identifier
+    name: 🌅🌆🌌个人摄影展
+    description: '个人摄影作品展示站' # default=empty 
+    url: 'https://photo.znhy.uk'
+
+    - id: pastebin # unique identifier
+    name: 🗒️📋📝自用云剪切板
+    description: '部署在cf的pastebin' # default=empty 
+    url: 'https://note.slzr.us.kg'
+
   
 #  - id: home # unique identifier 
 #    name: 🏠
