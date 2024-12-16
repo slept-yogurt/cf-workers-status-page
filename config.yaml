@@ -31,10 +31,10 @@ monitors:
     description: '部署的New Api //serv00' # default=empty    
     url: 'https://zf.121723.xyz/'
 
-  - id: bing03 # unique identifier
-    name: 网页new bing
-    description: '部署在华沙网页new bing, 国内可访问 //serv07' # default=empty
-    url: 'https://b7.121723.xyz/web/'
+#  - id: bing03 # unique identifier
+#    name: 网页new bing
+#    description: '部署在华沙网页new bing, 国内可访问 //serv07' # default=empty
+#    url: 'https://b7.121723.xyz/web/'
     
   - id: reader # unique identifier
     name: 📖📕📗📘📙📚
@@ -56,10 +56,10 @@ monitors:
     description: 'Memos, 可以当成备忘录 //serv0️⃣8️⃣' # default=empty  
     url: 'https://memos.121723.xyz/'
 
-  - id: bing-self # unique identifier
-    name: 网页new bing 
-    description: '部署在cf的网页new bing， 国内可访问' # default=empty 
-    url: 'https://bing.121723.xyz/web/'
+#  - id: bing-self # unique identifier
+#    name: 网页new bing 
+#    description: '部署在cf的网页new bing， 国内可访问' # default=empty 
+#    url: 'https://bing.121723.xyz/web/'
 
   - id: blog # unique identifier
     name: my blog
