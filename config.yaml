@@ -39,7 +39,7 @@ monitors:
   - id: reader # unique identifier
     name: 📖📕📗📘📙📚
     description: '在线阅读器 //serv07' # default=empty
-    url: 'https://reader.121723.xyz/'
+    url: 'https://reader.121723.xyz/login?next=%2F'
 
   - id: lx-sync # unique identifier
     name: 🥳🎧🎵
