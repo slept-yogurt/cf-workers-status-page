@@ -21,7 +21,7 @@ monitors:
     description: '一起看剧吧 //serv00' # default=empty  
     url: 'https://sync.121723.xyz/web/'
 
-  - id: alist00 # unique identifier
+  - id: alist00 # unique identifier  
     name: 咖啡屋备用站
     description: '部署的alist服务，集成了匿名聊天室和一起看功能 //serv00' # default=empty
     url: 'https://p00.121723.xyz/'
@@ -31,29 +31,31 @@ monitors:
     description: '部署的New Api //serv00' # default=empty    
     url: 'https://zf.121723.xyz/'
 
-#  - id: bing03 # unique identifier
+#  - id: bing03 # unique identifier  
 #    name: 网页new bing
 #    description: '部署在华沙网页new bing, 国内可访问 //serv07' # default=empty
 #    url: 'https://b7.121723.xyz/web/'
-    
-  - id: reader # unique identifier
-    name: 📖📕📗📘📙📚
-    description: '在线阅读器 //serv07' # default=empty
-    url: 'https://reader.121723.xyz/login?next=%2F'
 
-  - id: lx-sync # unique identifier
-    name: 🥳🎧🎵
+# 还在纠结部署哪个项目，https://github.com/Kareadita/Kavita 吃资源且不能网页上传，但是能同步进度
+# https://github.com/janeczku/calibre-web 可以部署到serv00 但是不能同步进度
+#  - id: reader # unique identifier  
+#    name: 📖📕📗📘📙📚  
+#    description: '在线阅读器 //serv07' # default=empty    
+#    url: 'https://reader.121723.xyz/login?next=%2F'  
+
+  - id: lx-sync # unique identifier  
+    name: 🥳🎧🎵  
     description: 'lx-music的数据同步服务 //serv07' # default=empty
-    url: 'https://lx.121723.xyz/hello'
+    url: 'https://lx.121723.xyz/hello'    
 
   - id: pico # unique identifier 
-    name: 🪄🛫picoshare🛬
+    name: 🪄🛫picoshare🛬  
     description: '文件分享服务 //serv08' # default=empty 
     url: 'https://pico.121723.xyz/'
 
   - id: memos # unique identifier 
     name: ✍️Memos
-    description: 'Memos, 可以当成备忘录 //serv0️⃣8️⃣' # default=empty  
+    description: 'Memos, 可以当成备忘录 //serv0️⃣8️⃣' # default=empty    
     url: 'https://memos.121723.xyz/'
 
 #  - id: bing-self # unique identifier
