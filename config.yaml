@@ -36,17 +36,17 @@ monitors:
 #    description: '部署在华沙网页new bing, 国内可访问 //serv07' # default=empty
 #    url: 'https://b7.121723.xyz/web/'
 
-# 还在纠结部署哪个项目，https://github.com/Kareadita/Kavita 吃资源且不能网页上传，但是能同步进度
-# https://github.com/janeczku/calibre-web 可以部署到serv00 但是不能同步进度
+#  还在纠结部署哪个项目，https://github.com/Kareadita/Kavita 吃资源且不能网页上传，但是能同步进度
+#  https://github.com/janeczku/calibre-web 可以部署到serv00 但是不能同步进度
 #  - id: reader # unique identifier  
 #    name: 📖📕📗📘📙📚  
 #    description: '在线阅读器 //serv07' # default=empty    
 #    url: 'https://reader.121723.xyz/login?next=%2F'  
 
-  - id: lx-sync # unique identifier  
+  - id: lx-sync # unique identifier    
     name: 🥳🎧🎵  
-    description: 'lx-music的数据同步服务 //serv07' # default=empty
-    url: 'https://lx.121723.xyz/hello'    
+    description: 'lx-music的数据同步服务 //serv07' # default=empty  
+    url: 'https://lx.121723.xyz/hello'      
 
   - id: pico # unique identifier 
     name: 🪄🛫picoshare🛬  
