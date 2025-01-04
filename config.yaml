@@ -27,8 +27,8 @@ monitors:
 #    url: 'https://p00.121723.xyz/'
 
   - id: burn
-    name: burn after read
-    description: '🔥🔥📝部署在serv00的阅后即焚' 
+    name: 🔥🔥📝阅后即焚
+    description: 'burn after read deployed on serv00' 
     url: 'https://burnreading.amzm-znhy.serv00.net/'
 
   - id: newapi # unique identifier
