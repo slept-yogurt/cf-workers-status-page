@@ -21,10 +21,15 @@ monitors:
     description: '一起看剧吧 //serv00' # default=empty  
     url: 'https://sync.121723.xyz/web/'
 
-  - id: alist00 # unique identifier  
-    name: 咖啡屋备用站
-    description: '部署的alist服务，集成了匿名聊天室和一起看功能 //serv00' # default=empty
-    url: 'https://p00.121723.xyz/'
+#  - id: alist00 # unique identifier  
+#    name: 咖啡屋备用站
+#    description: '部署的alist服务，集成了匿名聊天室和一起看功能 //serv00' # default=empty
+#    url: 'https://p00.121723.xyz/'
+
+  - id: burn
+    name: burn after read
+    description: '🔥🔥📝部署在serv00的阅后即焚' 
+    url: 'https://burnreading.amzm-znhy.serv00.net/'
 
   - id: newapi # unique identifier
     name: New API
