@@ -110,7 +110,7 @@ monitors:
   - id: pastebin # unique identifier
     name: 🗒️📋📝自用云剪切板
     description: '部署在cf的pastebin' # default=empty 
-    url: 'https://note.slzr.us.kg'
+    url: 'https://note.121723.xyz'
 
   
 #  - id: home # unique identifier 
