@@ -53,12 +53,12 @@ monitors:
 
   - id: lx-sync # unique identifier    
     name: 🥳🎧🎵 
-    description: 'lx-music的数据同步服务 //serv07' # default=empty  
+    description: 'lx-music的数据同步服务' # default=empty  
     url: 'https://lx.121723.xyz/hello' 
 
   - id: pico # unique identifier 
     name: 🪄🛫filebox🛬  
-    description: '文件分享服务 //serv08' # default=empty 
+    description: '文件快递柜' # default=empty 
     url: 'https://filebox.121723.xyz/'
 
 #  - id: memos # unique identifier 
