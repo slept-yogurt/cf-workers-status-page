@@ -31,6 +31,11 @@ monitors:
 #    description: '部署的alist服务，集成了匿名聊天室和一起看功能 //serv00' # default=empty
 #    url: 'https://p00.121723.xyz/'
 
+  - id: chat
+    name: 🔥匿名聊天室🙈🙊
+    description: 'anonymous chatroom' 
+    url: 'https://chat.121723.xyz/'
+
   - id: burn
     name: 🔥🔥📝阅后即焚
     description: 'burn after read deployed on serv00' 
