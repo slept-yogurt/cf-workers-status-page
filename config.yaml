@@ -21,10 +21,10 @@ monitors:
 #    description: '一起看剧吧 //serv00' # default=empty  
 #    url: 'https://sync.121723.xyz/web/'
 
-  - id: music # unique identifier    
-    name: 🥳来听歌呀🎵🎶 
-    description: 'navidorme on huggingface' # default=empty  
-    url: 'https://music.znhy.uk/app/'
+#  - id: music # unique identifier    
+#    name: 🥳来听歌呀🎵🎶 
+#    description: 'navidorme on huggingface' # default=empty  
+#    url: 'https://music.znhy.uk/app/'
 
 #  - id: alist00 # unique identifier  
 #    name: 咖啡屋备用站
@@ -34,7 +34,7 @@ monitors:
   - id: chat
     name: 🔥匿名聊天室🙈🙊
     description: 'anonymous chatroom' 
-    url: 'https://chat.121723.xyz/'
+    url: 'https://chat.znhy.uk/'
 
   - id: burn
     name: 🔥🔥📝阅后即焚
@@ -61,10 +61,10 @@ monitors:
     description: 'lx-music的数据同步服务' # default=empty  
     url: 'https://lx.121723.xyz/hello' 
 
-  - id: pico # unique identifier 
-    name: 🪄🛫filebox🛬  
-    description: '文件快递柜' # default=empty 
-    url: 'https://filebox.121723.xyz/'
+#  - id: pico # unique identifier 
+#    name: 🪄🛫filebox🛬  
+#    description: '文件快递柜' # default=empty 
+#    url: 'https://filebox.121723.xyz/'
 
 #  - id: memos # unique identifier 
 #    name: ✍️Memos
@@ -102,20 +102,20 @@ monitors:
     description: 'vaultwarden' # default=empty  
     url: 'https://vault.znhy.uk/'
 
-  - id: ddg # unique identifier
-    name: 📮📮📧duckduckgo面板
-    description: 'ddg面板' # default=empty
-    url: 'https://ddg.znhy.uk/zh-CN/email'
+ # - id: ddg # unique identifier
+ #   name: 📮📮📧duckduckgo面板
+ #   description: 'ddg面板' # default=empty
+ #   url: 'https://ddg.znhy.uk/zh-CN/email'
 
-  - id: ddg1 # unique identifier
-    name: 📮📮📧duckduckgo面板
-    description: 'ddg面板' # default=empty 
-    url: 'https://ddg.121723.xyz/zh-CN/email'
+#  - id: ddg1 # unique identifier
+#    name: 📮📮📧duckduckgo面板
+#    description: 'ddg面板' # default=empty 
+#    url: 'https://ddg.121723.xyz/zh-CN/email'
     
-  - id: photogragh # unique identifier
-    name: 🌅🌆🌌个人摄影展
-    description: '个人摄影作品展示站' # default=empty 
-    url: 'https://photo.znhy.uk'
+#  - id: photogragh # unique identifier
+#    name: 🌅🌆🌌个人摄影展
+#    description: '个人摄影作品展示站' # default=empty 
+#    url: 'https://photo.znhy.uk'
 
   - id: pastebin # unique identifier
     name: 🗒️📋📝自用云剪切板
