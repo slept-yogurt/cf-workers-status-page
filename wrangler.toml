@@ -1,19 +1,23 @@
 name = "cf-workers-status-page"
 workers_dev = true
-account_id = ""
-type = "webpack"
-webpack_config = "node_modules/flareact/webpack"
+
+# worker 入口由 webpack 预先打包（见 .github/workflows/deploy.yml 的 "Bundle worker" 步骤）
+# wrangler v2+ 已移除 type = "webpack" / webpack_config，必须自己打包后用 main 指向产物
+main = "dist/main.js"
+# 产物已经是完整 bundle，禁止 wrangler 再用 esbuild 二次处理
+no_bundle = true
+
 compatibility_date = "2021-07-23"
 
 [triggers]
 crons = ["*/9 * * * *"]
 
+# Workers Sites：flareact 的 worker 依赖 getAssetFromKV + __STATIC_CONTENT 绑定来提供静态资源
+# 注意：Workers Sites 在 wrangler v4 中已移除，所以部署必须锁定 wrangler v3
 [site]
 bucket = "out"
-entry-point = "./"
 
-# uncomment and adjust following if you are not using GitHub Actions
+# KV 绑定由 CI 在部署前自动创建并追加到 wrangler.toml 的 [env.production]
+# 本地自行部署时，取消下面注释并填入你的 namespace id
 #[env.production]
-#kv-namespaces = [{binding="KV_STATUS_PAGE", id="xxxx", preview_id=""}]
-#zone_id="xxx"
-#route="xxx"
+#kv_namespaces = [{binding="KV_STATUS_PAGE", id="xxxx"}]

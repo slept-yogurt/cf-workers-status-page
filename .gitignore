@@ -132,5 +132,11 @@ worker/
 .envrc
 .direnv/
 out/
+dist/
 package-lock.json
 public/style.css
+.wrangler/
+.dev.vars
+
+# WorkBuddy AI 的本地工作记录，属于个人笔记，不入库
+.workbuddy-ai/
